@@ -1,55 +1,129 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>About-me</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Sindhoora O</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background:#2c3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            border-radius: 10px;
+            margin: 10px;
+        }
+        textarea, input {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #2c3e50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #a00000;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
 <body>
-    <div class="topnav">
-        <h3><b>Sindhoora O</b></h3>
-        <a class="active" href="index.html">Work</a>
-        <a href="#aboutme">About me</a>
-        <a href="https://drive.google.com/file/d/116hLPRK4VxJy7LYODpauZhGXoYIgRrEb/view?usp=sharing">Resume</a>
-        <a href="#contact">Contact</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Sindhoora O</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="https://drive.google.com/file/d/116hLPRK4VxJy7LYODpauZhGXoYIgRrEb/view?usp=sharing" target="_blank">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="about-container">
+        <div class="about-image">
+            <img src="Images/image.png" alt="Sindhoora O">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Sindhoora O</strong> — a passionate software engineer currently in my final year of 
+            <strong>B.E. Information Science and Engineering</strong> at <em>Canara Engineering College, Mangalore</em>.</p>
+    
+            <p>I specialize in <strong>software development, web technologies, and automation</strong>. My projects focus on 
+            machine learning, AI, and full-stack development, leveraging Java, Python, TensorFlow, Flask, and React.</p>
+    
+            <p>I thrive on solving real-world problems through technology and love creating innovative solutions that 
+            enhance user experiences.</p>
+    
+            <p><em>"Code is like poetry – beautifully structured, impactful, and powerful."</em></p>
+    
+            <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+    </div>
+    
+    
+    <div class="container" id="contact">
+        <h2>Let's Connect!</h2><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="Your name.."><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Your email.."><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" placeholder="Write a message..."></textarea><br><br>
+        <button type="submit">Submit</button>
+    </div>
+    
+    <footer>
         <a href="https://github.com/SindhooraO" target="_blank">
             <img src="https://github.com/fluidicon.png" height="30" width="30" alt="GitHub Logo">
         </a>
         <a href="https://www.linkedin.com/in/sindhoora-o" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="30" width="30" alt="GitHub Logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="30" width="30" alt="LinkedIn Logo">
         </a>
-        
-    <center>
-        <h2>About me</h2>
-        <img src="dp2.png" alt="Error" height="200px" width="250px">
-<h3>        Hey! I'm Sindhoora O and I'm  a Software Engineer. 
-    <br>I'm currently pursuing my final year B.E in Information Science and Engineering in Canara Engineering College, Mangalore.
-    <br>
-
-    I am a passionate and dedicated engineer with a strong background in  software development and  web technologies. With a deep curiosity for technology and a problem-solving mindset, I specialize in designing, developing, and implementing innovative solutions that bridge the gap between theory and real-world applications.  
-    
-   <br> My journey in engineering has been driven by a strong desire to create impactful and efficient solutions. Over the years, I have worked on diverse projects involving   machine learning models, automation systems, web based applications, where I have applied my expertise in technical skills, like Java, Python, TensorFlow, React, Flask, etc. to build scalable and efficient systems.  
-    
-    <br>Beyond just coding and development, I am deeply invested in understanding the bigger picture on how technology influences industries and improves lives. Whether it's optimizing algorithms, automating processes, or designing intuitive user interfaces, I always strive to blend functionality with innovation.  <br>
-    
-    I am always eager to learn new technologies, take on challenging problems, and collaborate with like-minded individuals who share a passion for engineering and innovation. <br>Feel free to explore my work, and let’s connect to discuss ideas, projects, or potential collaborations! 🚀
-</h3>
-
-<h2>Let's Connect!!</h2>
-<label for="name">Name:</label><br>
-<input type="text" placeholder="Your name.."><br><br>
-<label for="email">Email:</label><br>
-<input type="email" placeholder="Your email.."><br><br>
-<label for="message">Message:</label><br>
-<textarea name="message" id="#message" placeholder="Write a message"></textarea><br><br>
-<button type="submit" onclick="">Submit</button><br><br>
-<footer>
-    <a href="https://github.com/SindhooraO" target="_blank">
-        <img src="https://github.com/fluidicon.png" height="30" width="30" alt="GitHub Logo">
-    </a>
-    <a href="https://www.linkedin.com/in/sindhoora-o" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="30" width="30" alt="GitHub Logo">
-    </a>
-</footer>
-    </center>
+    </footer>
 </body>
-
 </html>
