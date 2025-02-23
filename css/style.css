@@ -1,19 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-
+body{
+    background-color: black;
+}
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #2c3e50;
     padding: 15px 30px;
+    margin-bottom: 10px;
 }
 
 .navbar .logo {
@@ -32,23 +34,24 @@
 }
 
 .nav-links a {
-    color: #ecf0f1;
+    color:  rgb(205, 9, 9);
     text-decoration: none;
     font-size: 18px;
+    
 }
 
 .nav-links a:hover {
-    color: #f39c12;
+    color: white;
 }
 
 /* Hero Section */
 .hero {
-    /* height: 60vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
+    box-shadow: #333;
 }
 
 .hero-content {
@@ -58,27 +61,48 @@
 }
 
 .hero h1 {
-    font-size: 36px;
+    font-size: 46px;
+    transition: font-size 0.5s ease-in-out;
+
 }
 
 .hero p {
     font-size: 18px;
     margin-top: 10px;
 }
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.hero h1 {
+    overflow: hidden; /* Ensures text stays within bounds */
+    white-space: nowrap; /* Prevents line breaks */
+    display: inline-block; /* Needed for width animation */
+    font-size: 46px;
+    animation: typing 3s steps(20) infinite, blink 0.6s infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: #f39c12;
-    color: white;
+   
     text-decoration: none;
     border-radius: 5px;
 }
 
-.btn:hover {
-    background: #d35400;
-}
 
 /* Projects Section */
 .projects {
@@ -117,7 +141,7 @@
 
 /* Footer */
 footer {
-    background: #2c3e50;
+    /* background:#860107; */
     color: white;
     text-align: center;
     padding: 20px;
@@ -127,10 +151,11 @@ footer {
     margin: 10px;
 }
 .about-container {
-    display: flex;
+    
+        display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background:rgb(19, 19, 19);
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -143,7 +168,6 @@ footer {
     height: 220px;
     border-radius: 12px;
     object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-content {
@@ -152,14 +176,14 @@ footer {
 }
 
 .about-content h2 {
-    color: #2c3e50;
+    color:rgb(205, 9, 9);
     font-size: 28px;
     margin-bottom: 10px;
 }
 
 .about-content p {
     font-size: 16px;
-    color: #333;
+    color:white;
     line-height: 1.6;
     margin-bottom: 12px;
 }
@@ -172,7 +196,7 @@ footer {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #2c3e50;
+    background:#860107;
     color: white;
     text-decoration: none;
     font-size: 16px;

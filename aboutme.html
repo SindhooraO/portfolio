@@ -10,45 +10,25 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color:black;
             text-align: center;
+           
         }
-        .navbar {
-            background:#2c3e50;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-        }
-        .nav-links {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
-        .nav-links li {
-            margin: 0 15px;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-        }
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
+       .about-container{
+
+    display: flex;
+    justify-content: space-between;
+       }
         .container {
-            max-width: 800px;
+            color: white;
+            max-width: 600px;
             margin: 20px auto;
-            background: white;
+            background: rgb(19, 19, 19);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        img {
-            border-radius: 10px;
-            margin: 10px;
-        }
+        
         textarea, input {
             width: 80%;
             padding: 10px;
@@ -57,7 +37,7 @@
             border-radius: 5px;
         }
         button {
-            background: #2c3e50;
+            background: #860107;
             color: white;
             padding: 10px 15px;
             border: none;
@@ -73,23 +53,28 @@
     </style>
 </head>
 <body>
+  
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Sindhoora O</div>
-        <ul class="nav-links">
+    <nav class="navbar" >
+        <div class="logo" style="color: rgb(205, 9, 9);">Sindhoora O</div>
+        <ul class="nav-links"  >
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="https://drive.google.com/file/d/116hLPRK4VxJy7LYODpauZhGXoYIgRrEb/view?usp=sharing" target="_blank">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="aboutme.html#contact">Contact</a></li>
+            <li><a href="https://github.com/SindhooraO" target="_blank">
+                <img src="https://github.com/fluidicon.png" height="25" width="25" alt="GitHub">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/sindhoora-o" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="25" width="25" alt="LinkedIn">
+            </a></li>
         </ul>
     </nav>
     
-    <div class="about-container">
-        <div class="about-image">
-            <img src="Images/image.png" alt="Sindhoora O">
-        </div>
-        <div class="about-content">
-            <h2>About Me</h2>
+    <div class="about-container" style="margin: 0% 19%;">
+        
+        <div class="about-content" style="text-align: justify  ; width: 600px;">
+            <h2><center>About Me</center></h2>
             <p>Hi, I'm <strong>Sindhoora O</strong> — a passionate software engineer currently in my final year of 
             <strong>B.E. Information Science and Engineering</strong> at <em>Canara Engineering College, Mangalore</em>.</p>
     
@@ -100,8 +85,11 @@
             enhance user experiences.</p>
     
             <p><em>"Code is like poetry – beautifully structured, impactful, and powerful."</em></p>
-    
-            <a href="#contact" class="btn">Let's Connect</a>
+    <center>            <a href="#contact" class="btn">Let's Connect</a>
+    </center>
+        </div>
+        <div class="about-image">
+            <img src="Images/image.png" alt="Sindhoora O" style="height: 390px; width: 300px; margin: 30px;">
         </div>
     </div>
     
