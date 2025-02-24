@@ -208,3 +208,21 @@ footer {
     background: #a00000;
 }
 
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(205, 9, 9);
+    color: white;
+    border-radius: 5px;
+}
+
+.filter-buttons button:hover {
+    background-color: rgb(150, 5, 5);
+}

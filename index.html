@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sindhoora O - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -28,47 +29,71 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1><strong>Hi, I'm Sindhoora O</strong></h1><br>
+            <h1 id="greeting"><strong></strong></h1>
+            <h2 style="font-size: 36px;"><strong> I'm Sindhoora O</strong></h1><br>
+
             <h3>Driven by a desire to develop my skills and support the growth of the organization, while simultaneously advancing my career, I am eager to embrace opportunities for learning and professional development.</h3>            <a href="https://drive.google.com/file/d/116hLPRK4VxJy7LYODpauZhGXoYIgRrEb/view?usp=sharing" class="btn">Download Resume</a>
         </div>
     </section>
 
+
+    
+    
     <!-- Projects Section -->
     <section class="projects">
         <h2 style="color: white;">My Projects</h2><br><br>
+        <div class="filter-buttons">
+            <button onclick="filterProjects('all')">All</button>
+            <button onclick="filterProjects('web')">Web Development</button>
+            <button onclick="filterProjects('ml')">Machine Learning</button>
+        </div>
+    
         <div class="projects-container">
-            <div class="card">
+            <!-- <div class="card" > -->
+                <div class="card web">
                 <img src="images/petAdoptionDatabase.jpg" alt="Pet Adoption Database">
-                <div class="card-content">
+                <div class="card-content" >
                     <h3>Pet Adoption Database</h3>
                     <p>A web-based application to manage pet adoption with CRUD functionalities.</p>
                 </div>
-            </div>
+                </div>
+            <!-- </div> -->
 
-            <div class="card">
+            <!-- <div class="card"> -->
+                <div class="card web">
+
                 <img src="images/WebScraper.png" alt="Web Scraper">
-                <div class="card-content">
+                <div class="card-content" >        
                     <h3>Web Scraper</h3>
                     <p>Python-based web scraper to extract useful data from websites.</p>
                 </div>
-            </div>
+                </div>
+            <!-- </div> -->
 
-            <div class="card">
+            <!-- <div class="card"> -->
+                <div class="card ml">
+
                 <img src="images/FR.png" alt="Face Reconstruction">
                 <div class="card-content">
                     <h3>Face Reconstruction</h3>
                     <p>ML-based model focusing on image noising and denoising techniques.</p>
                 </div>
-            </div>
 
-            <div class="card">
+                </div>
+            <!-- </div> -->
+
+            <!-- <div class="card"> -->
+                <div class="card ml">
+
                 <img src="images/ASD.png" alt="Autism Detection">
                 <div class="card-content">
                     <h3>Autism Detection</h3>
                     <p>Machine learning model for early detection of Autism Spectrum Disorder.</p>
                 </div>
+
+                </div>
             </div>
-        </div>
+        <!-- </div> -->
     </section>
 
     <!-- Footer -->
